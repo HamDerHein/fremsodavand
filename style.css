@@ -1,5 +1,9 @@
 /*Style.css - til dine custom styles*/
 
+body {
+    background-color: rgb(232, 219, 215);
+}
+
 img {
     width: 100%;
 }
@@ -20,18 +24,24 @@ section {
     padding: 2em 0;
 }
 
-#hero {
-    background-color: azure;
+#intro {
+    background-color: #8f1c25;
 }
 
-#voresis {
-    background-color: lightyellow;
+#sport {
+    background-color: #a7d9e1;
 }
 
-#tilbud {
-    background-color: burlywood;
+#hygge {
+    background-color: #e43310;
 }
 
-#omos {
-    background-color: lavender;
+#familie {
+    background-color: #bfd252;
+}
+
+.slogan {
+    top: -600px;
+    position: relative;
+    background-color: rgba(226, 231, 236, 0.4);
 }
