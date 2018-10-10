@@ -19,20 +19,34 @@ section {
 }
 */
 
+/*
 #intro {
     background-color: #8f1c25;
 }
+*/
 
+/*
 #sport {
-    background-color: #a7d9e1;
+    background-color: #96aaa1;
 }
+*/
 
+/*
 #hygge {
     background-color: #e43310;
 }
 
 #familie {
     background-color: #bfd252;
+}
+*/
+
+.active {
+    background-color: green !important;
+}
+
+.active2 {
+    background-color: red!important;
 }
 
 .slogan {
