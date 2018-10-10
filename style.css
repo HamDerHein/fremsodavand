@@ -5,6 +5,24 @@ body {
     margin: 0;
 }
 
+.jumbotron-fluid {
+    margin-top: 0px;
+}
+
+.navbanner {
+    position: absolute;
+
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.navbar-brand {
+    width: 1000%;
+    padding-bottom: 30px;
+}
+
 img {
     width: 100%;
 }
@@ -12,6 +30,7 @@ img {
 .container-fluid {
     padding: 0;
 }
+
 
 /*
 section {

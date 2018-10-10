@@ -22,7 +22,10 @@
     <main class="container-fluid">
         <!--NAVIGATION-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="img/Frem_logo.svg" alt="Fremsodavand" class="fremlogo w-50"></a>
+            <img src="/img/banner/Banner_nav.png" alt="" class="navbanner">
+
+            <a class="navbar-brand" href="index.html"><img src="img/banner/Banner_logo.png" alt="Fremsodavand" class="fremlogo"></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -49,11 +52,6 @@
             </div>
         </nav>
         <!--NAVIGATION-->
-
-
-
-        <img src="/img/banner/Banner_04.png" alt="" class="sportbanner">
-        <img src="/img/banner/Banner_05.png" alt="" class="sportbanner">
 
         <!--HEADER SPLASH-->
 
@@ -253,6 +251,7 @@
         navMain.on("click", "a:not([data-toggle])", null, function() {
             navMain.collapse('hide');
         });
+
     </script>
 
     <script>
@@ -260,21 +259,35 @@
             $("#btncorrect").removeClass("active");
             $(this).addClass("active");
         });
+
     </script>
     <script>
         $("#btnwrong2").click(function() {
             $("#btnwrong2").removeClass("active2");
             $(this).addClass("active2");
         });
+
     </script>
-<!--
+    <!--
 <script>
     $("#btnwrong").click(function() {
         $("#btnwrong").removeClass("active2");
         $(this).addClass("active2");
     });
 </script>-->
+    <script>
+        ScrollReveal().reveal('#intro')
+        ScrollReveal().reveal('#hygge', {
+            delay: 500
+        })
+        ScrollReveal().reveal('#sport', {
+            delay: 2000
+        })
+        ScrollReveal().reveal('#familie', {
+            delay: 500
+        })
 
+    </script>
 </body>
 
 </html>
