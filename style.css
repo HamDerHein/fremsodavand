@@ -5,17 +5,19 @@ body {
     margin: 0;
 }
 
-.jumbotron-fluid {
-    margin-top: 0px;
-}
 
 .navbanner {
     position: absolute;
 
 }
 
+.bg-light {
+    background-color: rgb(232, 219, 215)!important;
+}
+
 .navbar {
     padding: 0px;
+    background-color: rgb(232, 219, 215);
 }
 
 .navbar-brand {
@@ -32,7 +34,7 @@ img {
 }
 
 .animation {
-    width: 15%;
+    width: 20%;
 }
 
 /*
