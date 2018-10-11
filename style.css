@@ -1,29 +1,135 @@
 /*Style.css - til dine custom styles*/
 
+/*GENERAL SETTINGS*/
+
 body {
     background-color: rgb(232, 219, 215);
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
+html {}
+
+/*GENERAL SETTINGS*/
+
+/*FONTS*/
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.5em + 2vw);
+
+}
+
+/*FONTS*/
+
+/*MEDIA QUERIES*/
 
 .navbanner {
     position: absolute;
-
+    top: 0px;
+    width: 100%;
 }
+
+.navbar-toggler {
+    position: absolute;
+    text-align: right;
+    top: 2vw;
+    right: 2.5vw;
+    font-size: 1rem;
+
+    /*    font-size: calc(0.2em + 2vw);*/
+    padding: 0.15rem 0.25rem;
+}
+
+
+.navbar-collapse {
+    position: relative;
+    top: 2vw;
+    background-color: rgb(232, 219, 215);
+}
+
+.fremlogo {
+    width: 100%;
+}
+
+.animationintroblock {
+    display: block;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar-toggler {
+        position: absolute;
+        text-align: right;
+        top: 2vw;
+        right: 2vw;
+        font-size: calc(0.5em + 2vw);
+        padding: 0.25rem 0.75rem;
+
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: -1vw;
+        background-color: rgb(232, 219, 215);
+    }
+    .fremlogo {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
+
+/*MEDIA QUERIES*/
+
+.header {
+    position: relative;
+    min-height: 130px;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: -28px;
+    z-index: 2;
+    height: 42px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
 
 .bg-light {
     background-color: rgb(232, 219, 215)!important;
 }
 
 .navbar {
+    width: 109%;
     padding: 0px;
     background-color: rgb(232, 219, 215);
 }
 
-.navbar-brand {
-    width: 1000%;
-    padding-bottom: 30px;
-}
+
 
 img {
     width: 100%;
@@ -31,13 +137,14 @@ img {
 
 .container-fluid {
     padding: 0;
+    padding-right: 0px;
 }
 
 .animation {
     width: 24%;
     position: absolute;
     z-index: 20;
-    left: 18vw;
+    left: 20vw;
     top: 5vw;
 
 }
@@ -45,7 +152,7 @@ img {
 .fremkasser {
     width: 200%;
     position: absolute;
-    left: -35vw;
+    left: -45vw;
     z-index: 10;
 
 }

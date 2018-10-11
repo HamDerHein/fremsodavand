@@ -1,13 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Frem Sodavand</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--FONTS-->
     <link rel="stylesheet" href="bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -21,68 +24,26 @@
 
     <main class="container-fluid">
         <!--NAVIGATION-->
-        <!--
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="/img/banner/Banner_nav.png" alt="" class="navbanner">
+        <header class="header" role="banner">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="/img/banner/Banner_nav.png" alt="" class="navbanner">
+                <a class="navbar-brand" href="index.html"><img src="img/banner/Banner_logo.png" alt="Fremsodavand" class="fremlogo"></a>
 
-            <a class="navbar-brand" href="index.html"><img src="img/banner/Banner_logo.png" alt="Fremsodavand" class="fremlogo"></a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                  </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div class="navbar-nav float-right text-right pr-3">
+                        <a class="nav-item nav-link active" href="#">Historie<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">BK-Frem</a>
+                        <a class="nav-item nav-link" href="#">Favoritfilm</a>
+                        <a class="nav-item nav-link" href="#">Samvær</a>
 
-                <ul class="navbar-nav ml-auto">
-                    "ml-auto" betyder margin left auto
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#intro">Historie <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Din fremvand
-        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#samesame">Klar til kamp</a>
-                            <a class="dropdown-item" href="#hero">Klar til film</a>
-                            <a class="dropdown-item" href="voresis">Klar til fødselsdag</a>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
--->
-
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand col-6 mt-2" href="#">
-                <img src="img/Frem_logo.svg" alt="" class="fremlogo w-50 pt-3">
-            </a>
-            <button class="navbar-toggler pr-3 pb-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-
+                    </div>
+                </div>
+            </nav>
+        </header>
         <!--NAVIGATION-->
 
         <!--HEADER SPLASH-->
@@ -471,7 +432,6 @@
         navMain.on("click", "a:not([data-toggle])", null, function() {
             navMain.collapse('hide');
         });
-
     </script>
 
 
@@ -507,7 +467,6 @@
         function vis_svar8() {
             $(".svar8").addClass("svar_vis8");
         }
-
     </script>
 
 
@@ -522,7 +481,6 @@
         ScrollReveal().reveal('#familie', {
             delay: 500
         })
-
     </script>
 </body>
 
