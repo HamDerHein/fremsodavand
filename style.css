@@ -31,6 +31,9 @@ img {
     padding: 0;
 }
 
+.animation {
+    width: 15%;
+}
 
 /*
 section {
@@ -60,14 +63,6 @@ section {
 }
 */
 
-.active {
-    background-color: green !important;
-}
-
-.active2 {
-    background-color: red!important;
-}
-
 .slogan {
     top: -600px;
     position: relative;
@@ -76,4 +71,79 @@ section {
 
 .insta {
     cursor: pointer;
+}
+
+
+
+/* GÆT EN FILM CSS CLASSES */
+
+.card {
+    background-color: transparent;
+}
+
+.card-img-top {
+    cursor: pointer;
+}
+
+.svar {
+    display: none;
+}
+
+.svar_vis {
+
+    display: block;
+}
+
+.svar2 {
+    display: none;
+}
+
+.svar_vis2 {
+
+    display: block;
+}
+
+.svar4 {
+    display: none;
+}
+
+.svar_vis4 {
+
+    display: block;
+}
+
+.svar5 {
+    display: none;
+}
+
+.svar_vis5 {
+
+    display: block;
+}
+
+.svar6 {
+    display: none;
+}
+
+.svar_vis6 {
+
+    display: block;
+}
+
+.svar7 {
+    display: none;
+}
+
+.svar_vis7 {
+
+    display: block;
+}
+
+.svar8 {
+    display: none;
+}
+
+.svar_vis8 {
+
+    display: block;
 }

@@ -55,12 +55,14 @@
 
         <!--HEADER SPLASH-->
 
-        <div class="carousel-item">
-            <img src="img/P1000252.JPG" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Alle på stribe drikker frem fra Ribe</h5>
-            </div>
-        </div>
+        <!--
+<div class="carousel-item">
+    <img src="img/P1000252.JPG" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Alle på stribe drikker frem fra Ribe</h5>
+    </div>
+</div>
+-->
 
         <div class="container-fluid">
             <div class="jumbotron-fluid">
@@ -74,8 +76,18 @@
 
             <p></p>
             <p class="slogan display-3 text-center">Alle på stribe drikker frem fra Ribe</p>
-            <img src="" alt="" class="animation">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <img src="img/frem_animation.gif" alt="" class="animation">
+                </div>
+
+            </div>
+
+
+
+
         </section>
+
         <!--HEADER SPLASH-->
         <section id="sport" class="row fullpage-layout">
             <img src="/img/banner/Banner_01.png" alt="" class="sportbanner h-50">
@@ -98,44 +110,55 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y7HCl2kJ2dA" allowfullscreen></iframe>
             </div>
 
+            <div class="text-center">
+                <h3>Kender du dine kult film?</h3>
+            </div>
+            <div class="text-center mt-5">
+                <h5>Tryk på billedet og få afvide hvilken film det er, hvis du ikke allerede har gættet det</h5>
+            </div>
+
             <div class="row mt-5 mr-5">
 
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="img/bw_billeder/delorean_bw.png" alt="Card image cap">
-    <div class="card-body">
-        <h4 class="card-text ">Gæt hvilken film dette er:</h4>
-    </div>
-
-
-    <button type="button" id="btnwrong" class="btn btn-primary" ng-click="levelCD()">Chiefdom</button>
-    <button type="button" id="btncorrect" class="btn btn-primary" ng-click="levelD()">District </button>
-    <button type="button" id="btnwrong" class="btn btn-primary" ng-click="levelF()">Facility </button>
-
-</div>
-
-
-
-
-                <div class="sw_billede1 col-3 pl-5 pt-3">
-                    <img src="img/bw_billeder/delorean_bw.png" alt="Fremsodavand">
+                <div class=" offset-2" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/delorean_bw.png" alt="Card image cap" onclick="vis_svar1()">
+                    <div class="svar py-3 mx-auto">
+                        <h4>Tilbage Fra Fremtiden</h4>
+                    </div>
                 </div>
-                <div class="sw_billede1 col-3">
-                    <img src="img/bw_billeder/indiana_jones_bw-01.png" alt="Fremsodavand">
+
+                <div class=" ml-5" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/indiana_jones_bw-01.png" alt="Card image cap" onclick="vis_svar2()">
+                    <div class="svar2 py-3 mx-auto">
+                        <h4>Indiana Jones</h4>
+                    </div>
                 </div>
-                <div class="sw_billede1 col-3 pt-3">
-                    <img src="img/bw_billeder/kill_bill_bw.png" alt="Fremsodavand">
+
+                <div class=" ml-5 mb-3" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/kill_bill_bw.png" alt="Card image cap" onclick="vis_svar4()">
+                    <div class="svar4 py-3 mx-auto">
+                        <h4>Kill Bill</h4>
+                    </div>
                 </div>
-                <div class="sw_billede1 col-3">
-                    <img src="img/bw_billeder/lion_king_bw.png" alt="Fremsodavand">
+
+                <div class=" offset-2 py-4" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/lion_king_bw.png" alt="Card image cap" onclick="vis_svar5()">
+                    <div class="svar5 py-3 mx-auto">
+                        <h4>Løvernes Konge</h4>
+                    </div>
                 </div>
-                <div class="sw_billede1 col-3 my-3 pr-3 offset-2">
-                    <img src="img/bw_billeder/pulp_fiction_bw-01-01.png" alt="Fremsodavand">
+
+                <div class=" ml-5 py-4" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/pulp_fiction_bw-01-01.png" alt="Card image cap" onclick="vis_svar6()">
+                    <div class="svar6 py-3 mx-auto">
+                        <h4>Pulp Fiction</h4>
+                    </div>
                 </div>
-                <div class="sw_billede1 col-3 my-3 pr-3 pt-3">
-                    <img src="img/bw_billeder/star_wars_bw.png" alt="Fremsodavand">
-                </div>
-                <div class="sw_billede1 col-3 my-3 pr-3">
-                    <img src="img/bw_billeder/rocky_bw.png" alt="Fremsodavand">
+
+                <div class=" ml-5 py-4" style="width: 18rem;">
+                    <img class="card-img-top tilbage" src="img/bw_billeder/star_wars_bw.png" alt="Card image cap" onclick="vis_svar7()">
+                    <div class="svar7 py-3 mx-auto">
+                        <h4>Star Wars</h4>
+                    </div>
                 </div>
 
             </div>
@@ -424,30 +447,44 @@
         navMain.on("click", "a:not([data-toggle])", null, function() {
             navMain.collapse('hide');
         });
-
     </script>
+
 
     <script>
-        $("#btncorrect").click(function() {
-            $("#btncorrect").removeClass("active");
-            $(this).addClass("active");
-        });
+        function vis_svar1() {
+            $(".svar").addClass("svar_vis");
+        }
 
-    </script>
-    <script>
-        $("#btnwrong2").click(function() {
-            $("#btnwrong2").removeClass("active2");
-            $(this).addClass("active2");
-        });
+        function vis_svar2() {
+            $(".svar2").addClass("svar_vis2");
+        }
 
+        function vis_svar3() {
+            $(".svar3").addClass("svar_vis3");
+        }
+
+        function vis_svar4() {
+            $(".svar4").addClass("svar_vis4");
+        }
+
+        function vis_svar5() {
+            $(".svar5").addClass("svar_vis5");
+        }
+
+        function vis_svar6() {
+            $(".svar6").addClass("svar_vis6");
+        }
+
+        function vis_svar7() {
+            $(".svar7").addClass("svar_vis7");
+        }
+
+        function vis_svar8() {
+            $(".svar8").addClass("svar_vis8");
+        }
     </script>
-    <!--
-<script>
-    $("#btnwrong").click(function() {
-        $("#btnwrong").removeClass("active2");
-        $(this).addClass("active2");
-    });
-</script>-->
+
+
     <script>
         ScrollReveal().reveal('#intro')
         ScrollReveal().reveal('#hygge', {
@@ -459,7 +496,6 @@
         ScrollReveal().reveal('#familie', {
             delay: 500
         })
-
     </script>
 </body>
 
