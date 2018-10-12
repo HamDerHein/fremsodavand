@@ -10,6 +10,14 @@ body {
 
 html {}
 
+.scrolltop {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    margin: 2vw;
+    border-radius: 50px;
+}
+
 /*GENERAL SETTINGS*/
 
 /*FONTS*/
