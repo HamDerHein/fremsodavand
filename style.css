@@ -150,7 +150,7 @@ img {
 }
 
 .animation {
-    width: 14%;
+    width: 18%;
     position: absolute;
     z-index: 20;
     right: 30vw;
@@ -160,7 +160,7 @@ img {
 
 .fremkasser {
     position: relative;
-    width: 100%;
+    width: 120%;
     left: -45vw;
     z-index: 10;
 
