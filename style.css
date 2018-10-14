@@ -4,7 +4,7 @@
 
 body {
     /*    #E2DDD2*/
-    background-color: rgba(226, 221, 210, 0.8);
+    background-color: #E2DDD2;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     transition: all 200ms ease-in;
@@ -85,13 +85,13 @@ p {
 }
 
 .bg-light {
-    background-color: rgb(232, 219, 215)!important;
+    background-color: #E2DDD2!important;
 }
 
 .navbar {
     width: 100%;
     padding: 0px;
-    background-color: rgb(232, 219, 215);
+    background-color: #E2DDD2;
 
 }
 
@@ -99,7 +99,7 @@ p {
     position: absolute;
     top: 0px;
     width: 100%;
-    background-color: rgb(232, 219, 215);
+    background-color: #E2DDD2;
 }
 
 .navbar-toggler {
@@ -116,14 +116,42 @@ p {
 
 .navbar-collapse {
     position: relative;
-    top: 2vw;
-    background-color: rgb(232, 219, 215);
+    top: 0vw;
+    background-color: #E2DDD2;
 }
 
 
 .fremlogo {
     position: relative;
     width: 90%;
+    opacity: 0.7;
+    transform: scale(1);
+}
+
+.nav-link {
+    position: relative;
+
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #878175;
+    opacity: 0.9;
+    transition: all 200ms ease-in;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(0.5em + 1vw);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #5f5b55;
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 200ms ease-in;
+}
+
+.fremlogo:hover {
+    transition: all 200ms ease-in;
+    opacity: 1;
 }
 
 .fremkasser {
@@ -160,6 +188,9 @@ p {
     .page-footer {
         font-size: calc(0.3em + 1vw);
     }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: calc(0.6em + 1vw);
+    }
     .navbar-toggler {
         margin-top: 2.8vw;
         top: 0;
@@ -170,8 +201,10 @@ p {
     .navbar-collapse {
         position: relative;
         top: -1vw;
-        background-color: rgb(232, 219, 215);
+        background-color: #E2DDD2;
+        transform: scale(1);
     }
+
     .fremlogo {
         width: 100%;
     }
@@ -205,11 +238,14 @@ p {
         width: 50px;
         height: 50px;
     }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: calc(0.6em + 1vw);
+    }
     .navbar-toggler {
         margin-top: 2.8vw;
         top: 0;
         right: 2.5vw;
-        font-size: calc(0.1em + 2vw);
+        font-size: calc(0.4em + 2vw);
 
     }
 }
@@ -233,8 +269,24 @@ p {
         top: -0.2vw;
         background-color: transparent;
         font-size: calc(0.1em + 2vw);
-        left: -36vw;
+        left: -40vw;
         margin: -2vw;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #878175;
+        opacity: 0.9;
+        text-decoration: underline;
+        transition: all 200ms ease-in;
+        font-family: 'Lato', sans-serif;
+        font-size: calc(0.6em + 1vw);
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #5f5b55;
+        opacity: 1;
+        text-decoration: overline;
+        transition: all 200ms ease-in;
     }
 }
 
@@ -257,8 +309,9 @@ p {
         top: -0.2vw;
         background-color: transparent;
         font-size: calc(0.1em + 2vw);
-        left: -38vw;
+        left: -41vw;
         margin: -2vw;
+
     }
 }
 
