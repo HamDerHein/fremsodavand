@@ -7,10 +7,18 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     transition: all 200ms ease-in;
-
 }
 
 html {}
+
+img {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+    padding-right: 0px;
+}
 
 .row {
     margin: 0;
@@ -18,12 +26,12 @@ html {}
 
 .scrollup {
     position: fixed;
-    bottom: -20px;
-    right: -10px;
+    bottom: -9px;
+    right: -1px;
     margin: 4vw;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     transition: all 200ms ease-in;
     opacity: 0.8;
     transform: scale(1);
@@ -33,6 +41,10 @@ html {}
     transition: all 200ms ease-in;
     opacity: 0.8;
     transform: scale(1.2);
+}
+
+.page-footer {
+    font-size: calc(0.3em + 0.5vw);
 }
 
 /*GENERAL SETTINGS*/
@@ -92,7 +104,7 @@ p {
 .navbar-toggler {
     position: absolute;
     text-align: right;
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     top: 0;
     right: 2.5vw;
     font-size: 1rem;
@@ -105,8 +117,8 @@ p {
     position: relative;
     top: 2vw;
     background-color: rgb(232, 219, 215);
-
 }
+
 
 .fremlogo {
     position: relative;
@@ -119,9 +131,6 @@ p {
     left: -26vw;
     top: 2vw;
     z-index: 10;
-
-
-
 }
 
 .animation {
@@ -130,7 +139,6 @@ p {
     left: 64vw;
     top: 2vw;
     z-index: 20;
-
 }
 
 
@@ -138,18 +146,24 @@ p {
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-    .navbar {
-        width: 100%;
+
+    .scrollup {
+        bottom: -20px;
+        right: -10px;
+        margin: 4vw;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .page-footer {
+        font-size: calc(0.3em + 1vw);
     }
     .navbar-toggler {
-        position: absolute;
-        text-align: right;
-        top: 2vw;
-        right: 2vw;
-        font-size: calc(0.5em + 2vw);
-        padding: 0.25rem 0.75rem;
-        z-index: 11;
-
+        margin-top: 2.8vw;
+        top: 0;
+        right: 2.5vw;
+        font-size: calc(0.4em + 2vw);
     }
 
     .navbar-collapse {
@@ -160,48 +174,94 @@ p {
     .fremlogo {
         width: 100%;
     }
-    .animation {
-        width: 18%;
-        position: absolute;
-        z-index: 20;
-        right: 30vw;
-        top: 0vw;
-
-    }
-
     .fremkasser {
         position: relative;
-        width: 120%;
-        left: -45vw;
+        width: 100%;
+        left: -35vw;
         z-index: 10;
 
     }
+
+    .animation {
+        width: 13%;
+        position: absolute;
+        z-index: 20;
+        left: 56vw;
+        top: 6vw;
+    }
+
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .scrollup {
+        bottom: -20px;
+        right: -10px;
+        margin: 4vw;
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-toggler {
+        margin-top: 2.8vw;
+        top: 0;
+        right: 2.5vw;
+        font-size: calc(0.1em + 2vw);
+
+    }
+}
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .scrollup {
+        bottom: -20px;
+        right: -10px;
+        margin: 4vw;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fremlogo {
+        width: 160%;
+    }
+    .navbar-collapse {
+        position: relative;
+        top: -0.2vw;
+        background-color: transparent;
+        font-size: calc(0.1em + 2vw);
+        left: -36vw;
+        margin: -2vw;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .scrollup {
+        bottom: -20px;
+        right: -10px;
+        margin: 4vw;
+        width: 50px;
+        height: 50px;
+    }
+    .fremlogo {
+        width: 155%;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: -0.2vw;
+        background-color: transparent;
+        font-size: calc(0.1em + 2vw);
+        left: -38vw;
+        margin: -2vw;
+    }
+}
 
 /*MEDIA QUERIES*/
-
-img {
-    width: 100%;
-}
-
-.container-fluid {
-    padding: 0;
-    padding-right: 0px;
-}
-
-
 
 /*
 section {
