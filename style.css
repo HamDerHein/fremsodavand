@@ -56,10 +56,31 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
+h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: #5f5b55;
+}
+
+.citater {
+    color: #d30606;
+    font-size: calc(1em + 1vw);
+    font-weight: 700;
+    font-style: oblique;
+    opacity: 0.7;
+    border-style: double;
+    border-spacing: inherit;
+    padding: 10px;
+    text-align: center;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: calc(0.5em + 2vw);
-
+    color: #5f5b55;
 }
 
 /*FONTS*/
