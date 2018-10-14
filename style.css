@@ -3,7 +3,8 @@
 /*GENERAL SETTINGS*/
 
 body {
-    background-color: rgb(232, 219, 215);
+    /*    #E2DDD2*/
+    background-color: rgba(226, 221, 210, 0.8);
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     transition: all 200ms ease-in;
