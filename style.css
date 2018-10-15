@@ -57,13 +57,18 @@ img {
 
 h1 {
     font-family: 'Lato', sans-serif;
+    color: #5f5b55;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
+    color: #5f5b55;
+
 }
 
 h3 {
+    font-size: calc(0.8em + 1vw);
+    font-weight: 700;
     font-family: 'Lato', sans-serif;
     color: #5f5b55;
 }
